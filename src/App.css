@@ -1,0 +1,122 @@
+*{
+  margin: 0
+}
+.app{
+  background-color: beige;
+}
+.header__main{
+  background-color: brown;
+  padding: 15px;
+}
+.header__main p{
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/****************************************Movies.js CSS*************************************/
+.movie__cardMain{
+  text-align: center;
+}
+.movie__cardMain p{
+  color: gray;
+  font-size: 15px;
+}
+.movie__cardMain h2{
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.movie__cardMain p span{
+  font-weight: 500
+}
+.movie__cardMain__hr{
+  display: flex;
+  justify-content: center;
+}
+.movie__cardMain__hr hr{
+  width: 10%;
+  text-align: center;
+  background-color: brown;
+  height: 2px;
+  margin-bottom: 10px;
+}
+.movie__card{
+  background: lavenderblush;
+  padding: 20px;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.movie__card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.title{
+  font-weight: 700;
+  color: brown;
+  margin-bottom: 10px;
+}
+.loading{
+  color: gray;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/********************************************Character.js CSS*************************************/
+.character{
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px;
+}
+.character__main{
+  margin-top: 20px;
+  padding: 0px 85px;
+}
+.character__main h1{
+  border-left: 10px solid brown;
+  padding-left: 10px;
+  margin-bottom: 12px;
+}
+.character__main .description{
+  color: gray;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.character__list h2{
+  margin-bottom: 8px;
+}
+.character hr{
+  margin: 10px 0px;
+}
+.character h4{
+  width: 22%;
+  color: gray;
+}
+.character p{
+  width: 13%;
+  color: gray;
+}
+.character .eyecolor, .character .haircolor, .character .gender{
+  width: 17% !important;
+  color: gray;
+}
+
+/********************************************Responsive CSS*************************************/
+@media screen and (max-width:520px) {
+  .character__main{
+    padding: 0px 20px;
+  }
+  .description{
+    line-height: 1.5;
+  }
+  .character p{
+    width:16%;
+  }
+  .character .eyecolor, .character .haircolor, .character .gender{
+    text-align: center;
+  }
+}
